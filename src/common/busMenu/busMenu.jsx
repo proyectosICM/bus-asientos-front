@@ -4,7 +4,7 @@ import './busMenu.css';
 
 export function BusMenu() {
   return (
-    <div className="container">
+    <div className="container c-fullscreen">
       <h1 className="title">Menu de Buses</h1>
       <div className="menu-container">
         <BusItem />

@@ -9,48 +9,117 @@
     margin-bottom: 20px;
 }
 
-
-
-.seating-panel {
-    width: 30%;
-    height: 650px;
-    border: 2px solid white;
-    border-radius: 25px;
-    margin: 10px auto;
+.seating-info {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* Espacio entre filas */
-    padding: 10px;
-    box-sizing: border-box;
+    flex-direction: row;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
-}
-
-.seat {
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-    border-radius: 5px;
-    background-color: lightgrey;
-    display: flex;
-    align-items: center;
+.seats-info-secured,
+.seats-info-unsecured {
+    width: 50%;
+    height: 80px;
     justify-content: center;
-    font-size: 1.2rem;
+    align-content: center;
 }
 
-.seat.secured {
-    background-color: green;
+.seats-info-secured {
+    background-color: rgb(0, 128, 0);
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
 }
 
-.seat.unsecured {
-    background-color: red;
+.seats-info-unsecured {
+    background-color: rgb(215, 0, 0);
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
 }
 
-.seat.empty {
-    background-color: transparent;
+@media (min-width: 320px) {
+    .backButton {
+        width: 90%;
+    }
+
+    .seating-info {
+        width: 90%;
+    }
+
+    .seating-info {
+        width: 85%;
+        height: 120px;
+    }
+
+    .seats-info-secured,
+    .seats-info-unsecured {
+        height: 120px;
+    }
+}
+
+@media (min-width: 568px) {
+    .backButton {
+        width: 85%;
+    }
+
+    .seating-info {
+        width: 85%;
+        height: 120px;
+    }
+
+    .seats-info-secured,
+    .seats-info-unsecured {
+        height: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    .backButton {
+        width: 80%;
+    }
+
+    .seating-info {
+        width: 80%;
+        height: 100px;
+        /* Ajustar altura para pantallas más grandes */
+    }
+
+    .seats-info-secured,
+    .seats-info-unsecured {
+        height: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .backButton {
+        width: 70%;
+    }
+
+    .seating-info {
+        width: 70%;
+        height: 100px;
+    }
+
+    .seats-info-secured,
+    .seats-info-unsecured {
+        height: 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .backButton {
+        width: 60%;
+    }
+
+    .seating-info {
+        width: 60%;
+        height: 120px;
+    }
+
+    .seats-info-secured,
+    .seats-info-unsecured {
+        height: 120px;
+    }
 }

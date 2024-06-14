@@ -1,0 +1,99 @@
+/* Estilos base */
+.sp-bus {
+    background-color: rgb(30, 145, 106);
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.sp-row {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sp-seat-secured,
+.sp-seat-unsecured,
+.sp-seat-empty {
+    width: 17%;
+    height: 100px;
+    margin: 0px 2.5%;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.sp-seat-secured {
+    background-color: rgb(40, 175, 40);
+}
+
+.sp-seat-unsecured {
+    background-color: rgb(209, 22, 22);
+}
+
+@media (max-width: 320px) {
+    .sp-bus {
+        width: 90%;
+    }
+    .sp-row {
+        flex-wrap: wrap;
+    }
+    .sp-seat-secured,
+    .sp-seat-unsecured,
+    .sp-seat-empty {
+        width: 40%;
+        margin: 5px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 568px) {
+    .sp-bus {
+        width: 90%;
+    }
+    .sp-seat-secured,
+    .sp-seat-unsecured,
+    .sp-seat-empty {
+        width: 30%;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+    .sp-bus {
+        width: 90%;
+    }
+    .sp-seat-secured,
+    .sp-seat-unsecured,
+    .sp-seat-empty {
+        width: 23%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sp-bus {
+        width: 90%;
+    }
+    .sp-seat-secured,
+    .sp-seat-unsecured,
+    .sp-seat-empty {
+        width: 19%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .sp-bus {
+        width: 90%;
+    }
+    .sp-seat-secured,
+    .sp-seat-unsecured,
+    .sp-seat-empty {
+        width: 15%;
+    }
+}
