@@ -1,0 +1,58 @@
+.bus-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+span {
+    margin: 5px 0;
+}
+
+@media (min-width: 600px) {
+    .bus-item {
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 30%;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    span {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bus-item {
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 30%;
+    }
+
+    .icon {
+        font-size: 3.5rem;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    span {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+}

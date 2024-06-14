@@ -1,0 +1,35 @@
+.container {
+    border: 2px solid #E5E7E9;
+    margin: 20px auto;
+    background-color: #F8F9F9;
+    width: 100%;
+}
+
+.title {
+    margin: 10px auto;
+    background-color: #F8F9F9;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .menu-container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-container {
+        gap: 30px;
+    }
+}
