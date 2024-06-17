@@ -16,6 +16,12 @@
     flex-direction: row;
 }
 
+.sp-seat img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
 .sp-seat-secured,
 .sp-seat-unsecured,
 .sp-seat-empty {
@@ -28,6 +34,11 @@
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    position: relative;
 }
 
 .sp-seat-secured {
@@ -36,6 +47,16 @@
 
 .sp-seat-unsecured {
     background-color: rgb(209, 22, 22);
+}
+
+/* Estilo al pasar el mouse por encima */
+.sp-seat:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño del asiento */
+}
+
+.sp-seat-secured:hover img,
+.sp-seat-unsecured:hover img {
+    content: url('../../images/seatBelt2.png'); /* Cambia la imagen al pasar el mouse */
 }
 
 @media (max-width: 320px) {

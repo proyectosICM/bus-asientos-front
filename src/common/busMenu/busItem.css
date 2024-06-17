@@ -5,14 +5,10 @@
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 10px;
+    margin: 10px; 
     max-width: 400px;
-    background-color: #f9f9f9;
-}
-
-.icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    background-color: #1b5381;
+    color: white;
 }
 
 span {

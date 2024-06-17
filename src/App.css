@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #3a3a3a;
+  height: 100vh;
 }
 
 .container {
@@ -12,6 +13,48 @@
 
 .c-fullscreen {
   height: 100vh;
+}
+
+.c-background {
+  background-color: #3a3a3a;
+}
+
+.a-margin {
+  margin: 10px auto 20px;
+}
+
+.n-button {
+  margin: 10px auto 0px;
+}
+
+.mapa-panel {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+}
+
+.mapa-button {
+  font-size: 32px;
+}
+
+.backButton {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 2px auto;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 2px auto;
 }
 
 .title {
@@ -38,6 +81,12 @@
 
 @media (min-width: 320px) {
 
+  .icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+
   .subtitle-white,
   .subtitle-black {
     font-size: 1.2rem;
@@ -45,6 +94,12 @@
 }
 
 @media (min-width: 568px) {
+
+  .icon {
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+  }
 
   .subtitle-white,
   .subtitle-black {
@@ -54,6 +109,12 @@
 
 @media (min-width: 768px) {
 
+  .icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+
   .subtitle-white,
   .subtitle-black {
     font-size: 1.4rem;
@@ -62,6 +123,12 @@
 
 @media (min-width: 1024px) {
 
+  .icon {
+    font-size: 2.2rem;
+    width: 60px;
+    height: 60px;
+  }
+
   .subtitle-white,
   .subtitle-black {
     font-size: 1.6rem;
@@ -69,6 +136,12 @@
 }
 
 @media (min-width: 1440px) {
+
+  .icon {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+  }
 
   .subtitle-white,
   .subtitle-black {
